@@ -2,7 +2,7 @@ const superTest = require('supertest')
 const server = superTest.agent('http://localhost:3000')
 
 describe('Sample test', function () {
-  it('should return home page - test content type update', function (done) {
+  it('should return home page - test content type update 1', function (done) {
     server.get('/')
       .expect('Content-type', /text/)
       .end(function (err, res) {
