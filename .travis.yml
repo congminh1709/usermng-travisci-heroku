@@ -7,9 +7,3 @@ script:
   - npm install
   - echo 'Running test'
   - npm test
-deploy:
-  provider: heroku
-  api_key: $heroku_key
-  app: usermng
-  on:
-    all_branches: true
